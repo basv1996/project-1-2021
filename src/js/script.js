@@ -1,6 +1,7 @@
 
 /*** Fetching data -> refactor into module later ***/
 const main = document.querySelector('main');
+const displayResults = document.querySelector('.searchResults');
 const cors = 'https://cors-anywhere.herokuapp.com/';
 const endpoint = 'https://zoeken.oba.nl/api/v1/search/?q=';
 const query = 'sport en voeding';
@@ -17,9 +18,11 @@ const config = {
 fetch(url, config)
   .then(response => {
     console.log(response)
+    response.status == 429 ? console.log("te veel gebruikers") : console.log("hoera");
     return response.json();
   })
   .then(data => {
+    
     render(data);
   })
   .catch(err => {
@@ -40,6 +43,6 @@ function render(data) {
               }">
             </article>
           `;
-    main.insertAdjacentHTML('beforeend', html);
+    displayResults.insertAdjacentHTML('beforeend', html);
   });
 }
