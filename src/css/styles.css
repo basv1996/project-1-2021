@@ -6,6 +6,13 @@
   --oranje: rgb(255,100,0);
 
 }
+
+@keyframes draaien {
+  to {
+      transform: rotate(360deg);
+  }
+}
+
 * {
     box-sizing: border-box;
   }
@@ -64,6 +71,22 @@
     padding: 2rem;
   }
 
+  .loader-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .loader-container .loader{
+    width: 150px;
+    height: 150px;
+    border: 10px solid lightblue;
+    border-top: 10px solid darkblue;
+    border-radius: 50%;
+    animation: draaien 2s linear infinite; 
+  }
+
   main form{
     position: absolute;
     top: 2em;
@@ -89,6 +112,16 @@
   /* main .vragen article {
 
   } */
+
+  /* Question section */
+
+  main .vragen {
+    border: 1px solid var(--zwart);
+    border-radius: 10px;
+    padding: 1em;
+    box-shadow: 2px 2px 10px var(--zwart);
+
+  }
   
   main .vragen article div {
     display: flex;
