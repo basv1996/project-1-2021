@@ -38,7 +38,7 @@
   }
 
   .hidden {
-    display: none;
+    display: none!important;
   }
 
   .show {
@@ -129,7 +129,13 @@
     gap: 1em;
     justify-content: space-around;
   }
-  main .vragen article div a {
+
+  main .vragen article div input[type="checkbox"]{
+    opacity: 0;
+    position: absolute;
+  }
+  
+  main .vragen article div > * {
     background-color: #ddd;
     padding: 1em;
     border: 1px solid #888;
@@ -138,7 +144,7 @@
     transition: 300ms;
   }
 
-  main .vragen article div a:hover{
+  main .vragen article div > *:hover{
     background-color: var(--wit);
     color: rgb(78, 78, 78);
     border: 1px solid #555;

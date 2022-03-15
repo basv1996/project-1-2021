@@ -4,3 +4,6 @@ window.onload = function(){
 ChangeUi.firstQuest();
 
 }
+
+//console.log(ChangeUi.firstQuestionAnswers)
+
