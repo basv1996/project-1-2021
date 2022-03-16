@@ -5,6 +5,8 @@ export const searchQuestion = document.querySelector(".searchVraag");
 export const firstQuestionAnswers = document.querySelectorAll(".vragen article:nth-of-type(1) a")
 export const secondQuestion = document.querySelector(".vragen article:nth-of-type(2)");
 export const searchResults = document.querySelector(".searchResults");
+export const noBooksYet = document.querySelector('.searchResults p:first-of-type')
+export const loader = document.querySelector(".loader-container")
 
 // export function firstQuest() {
 //     firstQuestion.classList.add("show");
@@ -22,8 +24,8 @@ export function hideAll() {
     secondQuestion.classList.add("hidden")
     SectionVragen.classList.add("hidden")
     searchResults.classList.remove("hidden")
-
 }
 
 ageQuestion.addEventListener("click", secondQuest)
 searchQuestion.addEventListener("click", hideAll)
+
