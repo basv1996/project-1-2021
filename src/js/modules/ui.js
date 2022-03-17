@@ -1,3 +1,5 @@
+import getData from "./getData.js";
+
 export const SectionVragen = document.querySelector(".vragen");
 export const firstQuestion = document.querySelector(".vragen article:nth-of-type(1)");
 export const ageQuestion = document.querySelector(".leeftijdVraag");
@@ -24,6 +26,7 @@ export function hideAll() {
     secondQuestion.classList.add("hidden")
     SectionVragen.classList.add("hidden")
     searchResults.classList.remove("hidden")
+    getData();
 }
 
 ageQuestion.addEventListener("click", secondQuest)

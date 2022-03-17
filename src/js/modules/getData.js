@@ -14,6 +14,26 @@ const config = {
   Authorization: `Bearer ${secret}`
 };
 
+
+// const getData = async () => {
+//   loader.classList.remove("hidden")
+//     await fetch(url, config)
+//   .then(response => {
+//     //console.log(response)
+  
+//     response.status == 429 ? console.log("aah wat jammer nou, te veel gebruikers") : console.log("hoera, lekker bezig, niet overbleast");
+//     return response.json();
+//   })
+//   .then(data => {
+//     loader.classList.add("hidden")
+//     noBooksYet.classList.add("hidden")
+//     renderData(data);
+//   })
+//   .catch(err => {
+//     console.log(err);
+//   })
+// };
+
 const getData = () => {
   loader.classList.remove("hidden")
     fetch(url, config)

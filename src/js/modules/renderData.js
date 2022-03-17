@@ -7,6 +7,7 @@ const renderData = (data) => {
     const results = data.results;
     console.dir(results);
     console.log(loader)
+    main.insertAdjacentHTML('afterbegin', `<p>${results.length} resultaten gevonden</p>`) // show how many results
     
     results.forEach((item, i) => {
       const html = `  

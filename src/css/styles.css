@@ -1,5 +1,6 @@
 :root {
 	--obaRed: #FF0000;
+  --zachtrood: #BC544B66;
   --Background: rgb(150,150,150);
   --wit: #fff;
   --zachtwit: #FAF9F6;
@@ -23,7 +24,6 @@
     margin: 0;
     padding: 0;
     font: 100% / 200% 'Trebuchet MS';
-    margin-top: 2em;
     font-family: 'Fredoka', sans-serif;
     font-family: 'Oxygen', sans-serif;
   }
@@ -58,6 +58,7 @@
   /* Navigation */
 
   nav ul {
+    padding: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -130,8 +131,8 @@
   .loader-container .loader{
     width: 150px;
     height: 150px;
-    border: 10px solid lightblue;
-    border-top: 10px solid darkblue;
+    border: 10px solid var(--zachtrood);
+    border-top: 10px solid var(--obaRed);
     border-radius: 50%;
     animation: draaien 2s linear infinite; 
   }
@@ -172,6 +173,10 @@
     background-color: var(--lichtBlauw);
 
   }
+
+  main .vragen article p {
+    color: var(--zwart);
+  }
   
   main .vragen article div {
     display: flex;
@@ -186,9 +191,9 @@
   }
   
   main .vragen article div > * {
-    background-color: #ddd;
+    background-color: var(--zachtwit);
     padding: 1em;
-    border: 1px solid #888;
+    border: 3px solid #888;
     border-radius: 10px;
     box-shadow: 2px 2px 5px #aab;
     transition: 300ms;
@@ -197,7 +202,7 @@
   main .vragen article div > *:hover{
     background-color: var(--wit);
     color: rgb(78, 78, 78);
-    border: 1px solid #555;
+    border: 3px solid var(--obaRed);
   }
 
 /* Cards */
