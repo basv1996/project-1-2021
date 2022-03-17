@@ -16,7 +16,6 @@ const config = {
   Authorization: `Bearer ${secret}`
 };
 
-
 // const getData = async () => {
 //   loader.classList.remove("hidden")
 //     await fetch(url, config)
