@@ -10,6 +10,7 @@ const secret = '2f60b69054b02f50180d9c088e06270ea';
 const detail = 'Default';
 const doelgroep = '&dim=Doelgroep(ageYoungAdults)';
 const url = `${cors}${endpoint}${query}&authorization=${key}&detaillevel=${detail}&output=json`;
+const onderwijsUrl = `https://obaliquid.staging.aquabrowser.nl/onderwijs/api/v1/search/?q=${query}+NOT+lom.lifecycle.contribute.publisher%3Dwikipedia&authorization=${key}&output=json`;
 
 const config = {
   Authorization: `Bearer ${secret}`
@@ -40,7 +41,6 @@ const getData = () => {
     fetch(url, config)
   .then(response => {
     //console.log(response)
-  
     response.status == 429 ? console.log("aah wat jammer nou, te veel gebruikers") : console.log("hoera, lekker bezig, niet overbleast");
     return response.json();
     
@@ -48,6 +48,11 @@ const getData = () => {
   .then(data => {
     loader.classList.add("hidden")
     noBooksYet.classList.add("hidden")
+    fetch(onderwijsUrl, config)
+    .then(result => result.json())
+            .then(output => {
+                render(data, output, query) // initializing the render function with the data and the query as arguments
+            })
     renderData(data);
   })
   .catch(err => {
