@@ -23,7 +23,7 @@ Create a single page webapp to search through different types of reseources. Use
 
 ### UsesStory / concept
 
-```
+```bash
 As a sport enthousiast in my twenties I would like to get to know more about the effect of healthy food on my endurance, so I can educate myself and become a better sports man or woman.
 ```
 
@@ -42,7 +42,7 @@ As a sport enthousiast in my twenties I would like to get to know more about the
 
 # 🗃 Data
 
-### 🐒 API
+###  API
 
 I use the API from the OBA to generate the booksabout the topics the users are searching for.
 ![Raw data](https://raw.githubusercontent.com/basv1996/project-1-2021/main//img/RawData.png)
