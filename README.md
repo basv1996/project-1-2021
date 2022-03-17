@@ -3,7 +3,7 @@
 
 ![Interface van de app](https://raw.githubusercontent.com/basv1996/project-1-2021/main/src/img/readme/interface_app_oba.png)
 
-- :globe_with_meridians: [Link to live application](https://basv1996.github.io/project-1-2021/)
+- :globe_with_meridians: [Link to live application](https://basv1996.github.io/project-1-2021/){:target="_blank"}
 
 ## Table of Contents
 - [Collection OBA](##take-a-look-inside-the-collection-of-the-openbare-bibliotheek-amsterdam)
@@ -11,9 +11,9 @@
 - [UserStory / concept](#usesstory--concept)
 - [Feature List](#feature-list)
 - [Delivery and criteria](#Delivery-&-criteria)
-- [Data](#Data)
-- [Credits](#Credits)
-- [License](#license)
+- [Data](#-data)
+- [Credits](#credits)
+- [License](#%EF%B8%8F-license)
 
 ## Take a look inside the collection of the Openbare Bibliotheek Amsterdam
 The project is based at the 'Centrale OBA'. The kickoff started at monday, followed by the presentations of the results on friday. In this week, every student in this course will build a prototype that visitors can use to help them find items from the OBA-collection.
