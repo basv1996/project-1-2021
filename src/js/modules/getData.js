@@ -16,25 +16,6 @@ const config = {
   Authorization: `Bearer ${secret}`
 };
 
-// const getData = async () => {
-//   loader.classList.remove("hidden")
-//     await fetch(url, config)
-//   .then(response => {
-//     //console.log(response)
-  
-//     response.status == 429 ? console.log("aah wat jammer nou, te veel gebruikers") : console.log("hoera, lekker bezig, niet overbleast");
-//     return response.json();
-//   })
-//   .then(data => {
-//     loader.classList.add("hidden")
-//     noBooksYet.classList.add("hidden")
-//     renderData(data);
-//   })
-//   .catch(err => {
-//     console.log(err);
-//   })
-// };
-
 const getData = () => {
   loader.classList.remove("hidden")
     fetch(url, config)
@@ -50,7 +31,7 @@ const getData = () => {
     fetch(onderwijsUrl, config)
     .then(result => result.json())
             .then(output => {
-                render(data, output, query) // initializing the render function with the data and the query as arguments
+                render(data, output, query) 
             })
     renderData(data);
   })
