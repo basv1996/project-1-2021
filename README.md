@@ -3,7 +3,7 @@
 
 ![Interface van de app](https://raw.githubusercontent.com/basv1996/project-1-2021/main/src/img/readme/interface_app_oba.png)
 
-- :globe_with_meridians: [Link to live application](https://basv1996.github.io/project-1-2021/){:target="_blank"}
+- :globe_with_meridians: [Link to live application](https://basv1996.github.io/project-1-2021/)
 
 ## Table of Contents
 - [Collection OBA](##take-a-look-inside-the-collection-of-the-openbare-bibliotheek-amsterdam)
