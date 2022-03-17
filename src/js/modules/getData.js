@@ -1,5 +1,6 @@
 import renderData from "./renderData.js";
 import { loader, noBooksYet } from "./ui.js";
+import { getForm } from "./GetValueForm.js";
 
 const cors = 'https://cors-anywhere.herokuapp.com/';
 const endpoint = 'https://zoeken.oba.nl/api/v1/search/?q=';
@@ -42,6 +43,7 @@ const getData = () => {
   
     response.status == 429 ? console.log("aah wat jammer nou, te veel gebruikers") : console.log("hoera, lekker bezig, niet overbleast");
     return response.json();
+    
   })
   .then(data => {
     loader.classList.add("hidden")

@@ -1,7 +1,7 @@
 # Project 1 @cmda-minor-web · 2020-2021
 
 
-![Interface van de app](https://raw.githubusercontent.com/basv1996/project-1-2021/main/)
+![Interface van de app](https://raw.githubusercontent.com/basv1996/project-1-2021/main/src/img/readme/interface_app_oba.png)
 
 - :globe_with_meridians: [Link to live application](#App-Interface)
 

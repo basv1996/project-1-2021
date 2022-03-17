@@ -5,6 +5,7 @@
   --wit: #fff;
   --zachtwit: #FAF9F6;
   --zwart: #000;
+  --zachtzwart: #404040;
   --oranje: rgb(255,100,0);
   --lichtBlauw: lightblue;
 
@@ -245,14 +246,14 @@
 }
 
 .flip-card-front {
-	background-color: #bbb;
+	background-color: var(--wit);
 	color: black;
 	display: grid;
 	place-items: center;
 }
 
 .flip-card-back {
-	background-color: #2980b9;
+	background-color: var(--zachtzwart);
 	color: white;
 	transform: rotateY(180deg);
 	padding: 1em;
