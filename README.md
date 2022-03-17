@@ -3,13 +3,17 @@
 
 ![Interface van de app](https://raw.githubusercontent.com/basv1996/project-1-2021/main/src/img/readme/interface_app_oba.png)
 
-- :globe_with_meridians: [Link to live application](#App-Interface)
+- :globe_with_meridians: [Link to live application](https://basv1996.github.io/project-1-2021/)
 
 ## Table of Contents
-- [heading 1](#App-Interface)
-- [heading 2](#Link-naar-de-app)
-- [heading 3](#De-Opdracht)
-- [heading 4](#feature-lijst)
+- [Collection OBA](##take-a-look-inside-the-collection-of-the-openbare-bibliotheek-amsterdam)
+- [Assingment](#assignment)
+- [UserStory / concept](#usesstory--concept)
+- [Feature List](#feature-list)
+- [Delivery and criteria](#Delivery-&-criteria)
+- [Data](#Data)
+- [Credits](#Credits)
+- [License](#license)
 
 ## Take a look inside the collection of the Openbare Bibliotheek Amsterdam
 The project is based at the 'Centrale OBA'. The kickoff started at monday, followed by the presentations of the results on friday. In this week, every student in this course will build a prototype that visitors can use to help them find items from the OBA-collection.
@@ -35,7 +39,7 @@ As a sport enthousiast in my twenties I would like to get to know more about the
 
 
 
-# Oplevering & criteria
+# Delivery & criteria
 - presentation with my findings at the OBA.
 - Github with my code and ReadMe.
 
@@ -49,7 +53,7 @@ I use the API from the OBA to generate the booksabout the topics the users are s
 
 
 
-### Credits
+# Credits
 - [Minor Webdevelopment](https://github.com/cmda-tt/course-21-22) 
 - [Joost Faber](https://github.com/joostf) :nerd_face:
 - [Koop Reynders](https://github.com/KoopReynders) :nerd_face:
