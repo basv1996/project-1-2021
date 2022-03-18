@@ -10,7 +10,7 @@ const secret = '2f60b69054b02f50180d9c088e06270ea';
 const detail = 'Default';
 const doelgroep = '&dim=Doelgroep(ageYoungAdults)';
 const url = `${cors}${endpoint}${query}&authorization=${key}&detaillevel=${detail}&output=json`;
-const onderwijsUrl = `https://obaliquid.staging.aquabrowser.nl/onderwijs/api/v1/search/?q=${query}+NOT+lom.lifecycle.contribute.publisher%3Dwikipedia&authorization=${key}&output=json`;
+const onderwijsUrl = `http://obaliquid.staging.aquabrowser.nl/onderwijs/api/v1/search/?q=${query}+NOT+lom.lifecycle.contribute.publisher%3Dwikipedia&authorization=${key}&output=json`;
 
 const config = {
   Authorization: `Bearer ${secret}`
