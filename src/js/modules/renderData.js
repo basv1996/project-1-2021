@@ -40,7 +40,7 @@ const renderData = (data, output, query) => {
     const resultsNewAPI = output.results;
     console.log("new api data: ", output.results)
     // console.log(loader)
-    main.insertAdjacentHTML('afterbegin', `<p>${resultsNewAPI.length} resultaten gevonden</p>`) // show how many results per page
+    //main.insertAdjacentHTML('afterbegin', `<p>${resultsNewAPI.length} resultaten gevonden</p>`) // show how many results per page
 
     resultsNewAPI.length >  1 
   ?   

@@ -28,12 +28,13 @@ const getData = () => {
   .then(data => {
     loader.classList.add("hidden")
     noBooksYet.classList.add("hidden")
+    renderData(data);
     fetch(onderwijsUrl, config)
     .then(result => result.json())
             .then(output => {
                 renderDataNewAPI(data, output, query) 
             })
-    renderData(data);
+    
     // renderDataNewAPI(data)
   })
   .catch(err => {
