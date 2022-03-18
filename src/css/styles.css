@@ -251,6 +251,10 @@
 	place-items: center;
 }
 
+.flip-card-front img {
+  max-width: 200px;
+}
+
 .flip-card-back {
 	background-color: var(--zachtzwart);
 	color: white;

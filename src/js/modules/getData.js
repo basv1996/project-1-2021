@@ -1,4 +1,4 @@
-import renderData from "./renderData.js";
+import {renderData, renderDataNewAPI} from "./renderData.js";
 import { loader, noBooksYet } from "./ui.js";
 import { getForm } from "./GetValueForm.js";
 
@@ -10,7 +10,7 @@ const secret = '2f60b69054b02f50180d9c088e06270ea';
 const detail = 'Default';
 const doelgroep = '&dim=Doelgroep(ageYoungAdults)';
 const url = `${cors}${endpoint}${query}&authorization=${key}&detaillevel=${detail}&output=json`;
-const onderwijsUrl = `http://obaliquid.staging.aquabrowser.nl/onderwijs/api/v1/search/?q=${query}+NOT+lom.lifecycle.contribute.publisher%3Dwikipedia&authorization=${key}&output=json`;
+const onderwijsUrl = `${cors}http://obaliquid.staging.aquabrowser.nl/onderwijs/api/v1/search/?q=${query}+NOT+lom.lifecycle.contribute.publisher%3Dwikipedia&authorization=${key}&output=json`;
 
 const config = {
   Authorization: `Bearer ${secret}`
@@ -31,9 +31,10 @@ const getData = () => {
     fetch(onderwijsUrl, config)
     .then(result => result.json())
             .then(output => {
-                render(data, output, query) 
+                renderDataNewAPI(data, output, query) 
             })
     renderData(data);
+    // renderDataNewAPI(data)
   })
   .catch(err => {
     console.log(err);
